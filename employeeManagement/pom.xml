@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.employee</groupId>
 	<artifactId>employeeManagement</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>employeeManagement</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
@@ -30,10 +30,10 @@
 		<java.version>21</java.version>
 	</properties>
 	<dependencies>
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-data-jpa</artifactId>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -57,10 +57,37 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>your-repo-id</id>
+			<url>https://your-repo-url</url>
+		</repository>
+		<snapshotRepository>
+			<id>your-snapshot-repo-id</id>
+			<url>https://your-snapshot-repo-url</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
