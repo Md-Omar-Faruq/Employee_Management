@@ -1,4 +1,4 @@
-package com.employee.entity;
+package com.employee.entity.user;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -10,17 +10,15 @@ import lombok.Setter;
 @RequiredArgsConstructor
 @Getter
 @Setter
-public class UserEntity {
+public class User {
 
     @Id
     @GeneratedValue( strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     private  Long id;
-    @Column(name = "FIRST_NAME")
-    private  String firstName;
-    @Column(name = "LAST_NAME")
-    private String lastName;
-    @Column(name = "EMAIL_ID")
-    private String emailId;
+    @Column(name = "USER_NAME")
+    private  String userName;
+    @Column(name = "PASSWORD")
+    private String password;
 
 }
